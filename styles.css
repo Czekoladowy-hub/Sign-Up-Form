@@ -82,3 +82,42 @@
 .information-section__text {
   overflow-wrap: break-word;
 }
+
+.input-section {
+  padding: 2rem 3rem 3rem 5rem;
+}
+
+.input-section__title {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  position: relative;
+}
+
+input {
+  font-family: "DMSans-regular";
+  padding-left: 0.5rem;
+  height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  top: -1.3rem;
+  letter-spacing: 0.1rem;
+}
+
+.input-section__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.row {
+  display: flex;
+  gap: 7rem;
+}
