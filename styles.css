@@ -1,0 +1,57 @@
+@font-face {
+  font-family: odin-font;
+  src: url(fonts/Norse-Bold.otf);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --odin-logo-top-margin: 15rem;
+  --odin-logo-padding: 0.5rem;
+  --odin-logo-image-height: 10rem;
+  --odin-logo-height: calc(
+    var(--odin-logo-image-height) + var(----odin-logo-padding) * 2
+  );
+}
+
+.main-container {
+  display: flex;
+}
+
+.leaf-background {
+  position: relative;
+  font-family: "odin-font";
+}
+
+.leaf-background__image {
+  position: relative;
+  height: 100vh;
+  width: 35%;
+}
+
+.leaf-background__odin-logo {
+  position: absolute;
+  top: var(--odin-logo-top-margin);
+  width: 35%;
+  padding-top: var(--odin-logo-padding);
+  padding-bottom: var(--odin-logo-padding);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: rgb(0, 0, 0, 0.3);
+  color: white;
+}
+
+.odin-logo__image {
+  height: var(--odin-logo-image-height);
+}
+
+.odin-logo__text {
+  font-size: 7rem;
+}
