@@ -3,11 +3,17 @@
   src: url(fonts/Norse-Bold.otf);
 }
 
+@font-face {
+  font-family: "DMSans-regular";
+  src: url(fonts/DMSans-Regular.ttf);
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -15,7 +21,8 @@
   --odin-logo-padding: 0.5rem;
   --odin-logo-image-height: 10rem;
   --odin-logo-height: calc(
-    var(--odin-logo-image-height) + var(----odin-logo-padding) * 2
+    var(--odin-logo-image-height) + var(--odin-logo-top-margin) +
+      var(--odin-logo-padding) * 2
   );
 }
 
@@ -31,13 +38,13 @@
 .leaf-background__image {
   position: relative;
   height: 100vh;
-  width: 35%;
+  width: 100%;
 }
 
 .leaf-background__odin-logo {
   position: absolute;
   top: var(--odin-logo-top-margin);
-  width: 35%;
+  width: 100%;
   padding-top: var(--odin-logo-padding);
   padding-bottom: var(--odin-logo-padding);
   display: flex;
@@ -54,4 +61,22 @@
 
 .odin-logo__text {
   font-size: 7rem;
+}
+
+.main-site {
+  font-family: "DMSans-regular";
+  width: 65%;
+}
+
+.information-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: var(--odin-logo-height);
+  background-color: rgb(245, 245, 245);
+  padding: 12rem 20rem 10rem 5rem;
+}
+
+.information-section__text {
+  overflow-wrap: break-word;
 }
