@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <div class="main-container">
       <div class="leaf-background">
         <img
@@ -59,7 +62,7 @@
               </div>
               <div class="row-2__phone-number">
                 <form action="#">
-                  <input type="number" id="phone-number" />
+                  <input type="tel" id="phone-number" />
                   <label for="phone-number">PHONE NUMBER</label>
                 </form>
               </div>
@@ -70,6 +73,7 @@
                   <input type="password" id="password" />
                   <label for="password">PASSWORD</label>
                 </form>
+                <div class="password__match-information"></div>
               </div>
               <div class="row-3__confirm-password">
                 <form action="#">
@@ -80,8 +84,14 @@
             </div>
           </div>
         </div>
+        <div class="create-button-section">
+          <button class="create-button-section__button">Create Account</button>
+          <span class="create-button-section__log-in-text">
+            Already have an account?
+            <span class="log-in-text__green">Log In</span>
+          </span>
+        </div>
       </div>
     </div>
-  </head>
-  <body></body>
+  </body>
 </html>

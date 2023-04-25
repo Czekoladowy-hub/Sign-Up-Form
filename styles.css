@@ -65,6 +65,8 @@
 }
 
 .main-site {
+  display: flex;
+  flex-direction: column;
   font-family: "DMSans-regular";
   width: 65%;
 }
@@ -101,7 +103,14 @@ input {
   font-family: "DMSans-regular";
   padding-left: 0.5rem;
   height: 1.5rem;
-  font-size: 1.1rem;
+  width: 17rem;
+  font-size: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 2px;
+}
+
+input:focus {
+  outline-color: rgb(69, 69, 255);
 }
 
 label {
@@ -109,6 +118,7 @@ label {
   left: 0;
   top: -1.3rem;
   letter-spacing: 0.1rem;
+  color: rgb(66, 66, 66);
 }
 
 .input-section__inputs {
@@ -120,4 +130,33 @@ label {
 .row {
   display: flex;
   gap: 7rem;
+}
+
+.password__match-information {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.create-button-section {
+  background-color: rgb(245, 245, 245);
+  padding: 2rem 3rem 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.create-button-section__button {
+  width: 12rem;
+  aspect-ratio: 10/2.5;
+  background-color: #596d48;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+.log-in-text__green {
+  color: #596d48;
+  font-weight: 600;
 }
