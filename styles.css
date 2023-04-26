@@ -95,6 +95,7 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 5rem;
+  gap: 1rem;
 }
 
 .input-section__title {
