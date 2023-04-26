@@ -103,6 +103,10 @@
   margin-bottom: 2rem;
 }
 
+.row > div {
+  position: relative;
+}
+
 form {
   position: relative;
 }
@@ -127,6 +131,7 @@ label {
   top: -1.3rem;
   letter-spacing: 0.1rem;
   color: rgb(66, 66, 66);
+  width: 130%;
 }
 
 .input-section__inputs {
