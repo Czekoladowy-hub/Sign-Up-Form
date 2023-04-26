@@ -17,13 +17,11 @@
 }
 
 :root {
-  --odin-logo-top-margin: 10rem;
+  --odin-logo-top-margin: calc(
+    30% - var(--odin-logo-image-height) - var(--odin-logo-padding) * 2
+  );
   --odin-logo-padding: 0.5rem;
   --odin-logo-image-height: 5rem;
-  --odin-logo-height: calc(
-    var(--odin-logo-image-height) + var(--odin-logo-top-margin) +
-      var(--odin-logo-padding) * 2
-  );
 }
 
 .main-container {
@@ -75,10 +73,16 @@
   font-size: 1.3rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
-  height: var(--odin-logo-height);
+  height: 30%;
+  padding-left: 5rem;
   background-color: rgb(245, 245, 245);
-  padding: 5rem 20rem 0rem 5rem;
+}
+
+.information-section__text,
+.information-section__short-text {
+  width: 75%;
 }
 
 .information-section__text {
@@ -86,7 +90,11 @@
 }
 
 .input-section {
-  padding: 2rem 3rem 3rem 5rem;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
 }
 
 .input-section__title {
@@ -103,7 +111,7 @@ input {
   font-family: "DMSans-regular";
   padding-left: 0.5rem;
   height: 1.5rem;
-  width: 17rem;
+  width: 130%;
   font-size: 1rem;
   border: 1px solid #e5e7eb;
   border-radius: 2px;
@@ -129,7 +137,7 @@ label {
 
 .row {
   display: flex;
-  gap: 7rem;
+  gap: clamp(1rem, 7rem, 10rem);
 }
 
 .password__match-information {
@@ -143,11 +151,12 @@ label {
 
 .button-section {
   background-color: rgb(245, 245, 245);
-  padding: 2rem 3rem 3rem 5rem;
+  height: 30%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
   gap: 2rem;
-  flex: 1;
 }
 
 .button-section__button {
