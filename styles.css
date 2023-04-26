@@ -137,6 +137,10 @@ label {
   font-size: 0.8rem;
 }
 
+.password__do-not-match {
+  border: 1px solid red;
+}
+
 .button-section {
   background-color: rgb(245, 245, 245);
   padding: 2rem 3rem 3rem 5rem;
